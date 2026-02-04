@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fake Phone Numbers</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fake Phone Numbers</h1>
+    <p class="subtitle">NANP reserved range 555-01XX (safe for testing)</p>
+    <div class="controls">
+      <label for="country">Country</label>
+      <select id="country">
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+      </select>
+      <button id="generate" type="button">Generate</button>
+    </div>
+    <div id="results" class="results hidden">
+      <div class="format-row">
+        <label>E.164</label>
+        <code id="e164"></code>
+        <button type="button" class="copy" data-format="e164">Copy</button>
+      </div>
+      <div class="format-row">
+        <label>National</label>
+        <code id="national"></code>
+        <button type="button" class="copy" data-format="national">Copy</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

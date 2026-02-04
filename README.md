@@ -28,20 +28,3 @@ The last selected country is saved for next time.
 
 These numbers are designated fictitious and non-working and are safe for testing.
 
-## Sharing with others
-
-### Option A: Chrome Web Store (one-click install for anyone)
-
-1. Create a [Chrome Web Store developer account](https://chrome.google.com/webstore/devconsole) (one-time $5 registration).
-2. Zip the extension: include only the extension files (e.g. `manifest.json`, `popup/`, `scripts/`), not `.git` or other project cruft. From the project folder:  
-   `zip -r fake-phone-numbers.zip manifest.json popup scripts -x "*.DS_Store"`
-3. In the [developer dashboard](https://chrome.google.com/webstore/devconsole), click **New item** and upload the zip.
-4. Fill in the store listing: short description, detailed description, category (e.g. Developer Tools), and at least one screenshot (e.g. of the popup).
-5. Submit for review. After approval (often 1–3 days), the extension gets a public link you can share. Anyone can install it with one click.
-
-### Option B: Share the files (no store, no fee)
-
-1. Zip the extension folder (or push to GitHub and share the repo).
-2. Send the zip or repo link to others.
-3. They unzip (or clone), open `chrome://extensions/`, turn on **Developer mode**, click **Load unpacked**, and select the folder. No review and no account needed; they just need these steps.
-# fake-phone-numbers
